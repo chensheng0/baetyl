@@ -215,7 +215,7 @@ jobs:
           cp -r baetyl example scripts baetyl-${{ steps.version.outputs.version }}
           tar -cvzf baetyl-${{ steps.version.outputs.version }}.tar.gz baetyl-${{ steps.version.outputs.version }}
       - name: centos pack
-        uses: docker://centos:7.5.1804
+        uses: docker://centos:7.6.1810
         with:
           entrypoint: /bin/bash
           args: "scripts/centos/pack.sh"
