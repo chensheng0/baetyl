@@ -4,6 +4,8 @@ set -e
 
 yum update -y && yum install -y rpmdevtools rpm-sign
 
+ls
+
 gpg --import key.private && rpm --import key.public
 
 mkdir -p ~/rpmbuild/RPMS ~/rpmbuild/SRPMS ~/rpmbuild/BUILD ~/rpmbuild/SOURCES ~/rpmbuild/SPECS
