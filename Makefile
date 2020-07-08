@@ -3,7 +3,7 @@ MODULE_INIT:=init
 BIN_CORE:=baetyl-$(MODULE_CORE)
 BIN_INIT:=baetyl-$(MODULE_INIT)
 SRC_FILES:=$(shell find . -type f -name '*.go')
-PLATFORM_ALL:=darwin/amd64 linux/amd64 linux/arm64 linux/arm/v7
+PLATFORM_ALL:=darwin/amd64 linux/amd64 linux/arm64
 
 export DOCKER_CLI_EXPERIMENTAL=enabled
 
